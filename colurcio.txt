@@ -1,0 +1,67 @@
+﻿GIOVANNI COLURCIO 4I
+
+
+# Benvenuti al MC Donegani.
+Spesa = 0    p
+Print ("Benvenuti al MC Donegani \n")
+print (" Scegli il panino \n")
+Print (" Digita 1 per BIG TASTY, 2 per CRISPY MCBACON, 3 per MC CHICKEN \n")
+
+
+Scelta = int (input ())
+if scelta == 1:
+  Spesa += 9,00 # Hai scelto il BIG TASTY.
+
+
+if scelta == 2:
+  Spesa += 6,00 # Hai scelto il CRISPY MCBACON.
+
+
+if scelta ==3:
+  Spesa += 5,00 # Hai scelto il MC CHICKEN.
+
+
+Print ("scegli un secondo \n")
+Print ("digita 4 per le patatine, 5 per nuggets, 6 per i panzerotti \n")
+
+
+scelta = int(input())
+if scelta == 4;
+   Spesa += 3,50 # Hai scelto le patatine 
+if scelta == 5;
+   Spesa += 4,00 # Hai scelto le nuggets
+if scelta == 6;
+   Spesa += 4,00 # Hai scelto i panzerotti
+
+
+Print ("scegli un dessert \n")
+Print ("digita 7 per MC FLURRY, 8 per CAFFE, 9 per MILK SHAKE \n")
+scelta = int(input())
+if scelta == 7;
+   Spesa += 3,60 # Hai scelto il MC FLURRY 
+if scelta == 8;
+   Spesa += 1,20 # Hai scelto il CAFFE
+if scelta == 9;
+   Spesa += 2,00 # Hai scelto il MILK SHAKE
+
+
+Print ("Spesa Totale \n")
+Print ( Totale {: 2 f }. format(Spesa))
+
+
+numero_tavolo = input("Inserisci il numero del tavolo: ")
+
+
+# Chiediamo la modalità di pagamento
+modo_pagamento = input("Come intendi pagare? (carta/contanti): ")
+
+
+if modo_pagamento == "carta":
+    sconto = spesa * 0.10
+    spesa_finale = spesa - sconto
+    print("Hai diritto a un coupon sconto del 10% sul prossimo acquisto!")
+    print("Spesa finale (con sconto): {:.2f} €".format(spesa_finale))
+elif modo_pagamento == "contanti":
+    print("Spesa totale: {:.2f} €".format(spesa))
+else:
+    print("Modalità di pagamento non valida.")
